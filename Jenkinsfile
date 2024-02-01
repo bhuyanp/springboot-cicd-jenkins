@@ -8,13 +8,13 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Checkout') {
-            steps {
-                echo "FETCHING CODE.."
-                git url:'https://github.com/bhuyanp/springboot-cicd-jenkins.git'
-                sh "ls -ltr"
-            }
-        }
+        //stage('Checkout') {
+        //    steps {
+        //        echo "FETCHING CODE.."
+        //        git url:'https://github.com/bhuyanp/springboot-cicd-jenkins.git'
+        //        sh "ls -ltr"
+        //    }
+        //}
         stage('Build') {
             steps {
                 echo "BUILDING.."
