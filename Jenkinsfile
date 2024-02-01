@@ -21,7 +21,7 @@ pipeline {
                 sh "java -version"
                 sh "mvn -version"
                 withMaven{
-                    sh "mvn clean package"
+                    sh "mvn -Ddocker.host=tcp://192.168.16.3:2375 clean package"
                 }
 
             }
