@@ -1,4 +1,4 @@
-package com.example.springbootcicdjenkins;
+package com.example.springbootcicdjenkins.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
