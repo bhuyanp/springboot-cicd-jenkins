@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "FETCHING CODE.."
-                git url:'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git url:'https://github.com/bhuyanp/springboot-cicd-jenkins.git'
                 sh "ls -ltr"
             }
         }
